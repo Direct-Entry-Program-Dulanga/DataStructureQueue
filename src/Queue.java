@@ -41,7 +41,7 @@ public class Queue {
     }
 
     public void clear(){
-
+        ArrayQ = null;
     }
 
     public void print(){
