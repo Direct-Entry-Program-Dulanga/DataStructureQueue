@@ -10,6 +10,8 @@ public class Test {
         queue.enqueue(60);
         queue.enqueue(70);
         queue.print();
+        queue.dequeue();
+        queue.dequeue();
 
 
     }
