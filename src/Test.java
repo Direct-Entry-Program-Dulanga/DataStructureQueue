@@ -12,6 +12,9 @@ public class Test {
         queue.print();
         queue.dequeue();
         queue.dequeue();
+        queue.print();
+
+        System.out.println(queue.peek());
 
 
     }

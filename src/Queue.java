@@ -1,7 +1,6 @@
 public class Queue {
 
     private int[] ArrayQ;
-    int max = ArrayQ.length;
 
 
     public void enqueue(int number){
@@ -20,12 +19,10 @@ public class Queue {
 
     public void dequeue(){
         if (ArrayQ == null) {
-            System.out.println("Can't pop");
-        } else if (ArrayQ.length == 1) {
-            ArrayQ = null;
+            System.out.println("Can't Dequeue");
         } else {
-            int[] temp = new int[ArrayQ.length - 1];
-            for (int i = 0; i < temp.length; i++) {
+            int[] temp = new int[ArrayQ.length];
+            for (int i = temp.length-1; i > 0; i--) {
                 temp[i] = ArrayQ[i];
             }
             ArrayQ = temp;
@@ -40,7 +37,7 @@ public class Queue {
         if (empty()){
             System.err.println("Stack is empty");
         }
-        return ArrayQ[ArrayQ.length];
+        return ArrayQ[0];
     }
 
     public void clear(){
